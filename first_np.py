@@ -186,3 +186,9 @@ import matplotlib.pyplot as plt
 # plt.legend()
 # a = plt.show()
 # print(a)
+#USING MATPLOTLIB WILL CREATE histogram
+# blood_sugar_men = [117,76,89,245,456,123,92,412,321,234]
+# blood_sugar_wohmen = [121,90,100,290,480,150,100,430,350,250]
+# plt.hist([blood_sugar_men,blood_sugar_wohmen],bins=[90,190,290,390], rwidth=0.95)
+# a = plt.show()
+# print(a)
