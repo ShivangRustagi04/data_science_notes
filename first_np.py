@@ -172,3 +172,17 @@ import matplotlib.pyplot as plt
 # c = plt.show()
 # print(c)
 
+#USING MATPLOTLIB WILL CREATE bargraph
+# company = ['google','microsoft','amazon','meta','adobe']
+# revenue = [14,15,17,18,20]
+# profit = [5,6,7,8,9]
+# xpos = np.arange(len(company))
+# plt.xticks(xpos,company)
+# plt.xlabel("FY 2022-23")
+# plt.ylabel("REVENUE IN CRORE")
+# plt.title("ANNUAL REPORT")
+# plt.bar(xpos -0.2,revenue,width=0.4,label = 'revenue')
+# plt.bar(xpos +0.2,profit, width=0.4, label = 'profit')
+# plt.legend()
+# a = plt.show()
+# print(a)
