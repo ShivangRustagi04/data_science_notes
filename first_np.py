@@ -168,5 +168,7 @@ import matplotlib.pyplot as plt
 # plt.plot(days,min_t,label = 'MIN TEMP')
 
 # plt.legend()
+# plt.grid()
 # c = plt.show()
 # print(c)
+
