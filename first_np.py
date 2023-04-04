@@ -127,4 +127,7 @@ import pandas as pd
 # d3 = pd.merge(us_weather,d2, on = 'city', how='outer')
 # print(d3)
 
+'''mathplotlib karenge ab...'''
+
+import matplotlib.pyplot as plt
 
