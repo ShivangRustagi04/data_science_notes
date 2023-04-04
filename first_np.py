@@ -130,4 +130,43 @@ import pandas as pd
 '''mathplotlib karenge ab...'''
 
 import matplotlib.pyplot as plt
+# x = [5,5,35,35]
+# y = [5,60,5,60]
+# a = [5,5]
+# b = [5,60]
+# c = [50,5,5,50,50,30]
+# d = [60,60,10,10,35,35]
+# e = [50,5,5,50,50,30]
+# f = [60,60,10,10,35,35]
+# plt.plot(x,y,color = 'black',linewidth = 10, linestyle = 'solid')
+# r = plt.show()
+# print(r)
+# plt.plot(a,b,color = 'black',linewidth = 10, linestyle = 'solid')
+# s = plt.show()
+# print(s)
+# plt.plot(c,d,color = 'black',linewidth = 10, linestyle = 'solid')                                     made nigga using this
+# z = plt.show()
+# print(z)
+# plt.plot(e,f,color = 'black',linewidth = 10, linestyle = 'solid')
+# l = plt.show()
+# print(l)
+# x = [1,2,3,4]
+# y = [23,15,67,20]
+# plt.plot(x,y,'g+--')
+# c = plt.show()
+# print(c)
 
+# days = [1,2,3,4,5,6,7]
+# max_t = [75,80,95,85,90,100,105]
+# avg_t = [7,14,35,21,28,44,42]
+# min_t = [10,20,50,30,40,60,70]
+# plt.xlabel('DAYS')
+# plt.ylabel('TEMPERATURE')
+# plt.title('WEATHER')
+# plt.plot(days,max_t,label = 'MAX TEMP')
+# plt.plot(days,avg_t, label = 'AVG TEMP')               BY DOING THIS 3 STATEMENT WE CAN PLOT MULTIPLE GRAPH ON XY AXIS
+# plt.plot(days,min_t,label = 'MIN TEMP')
+
+# plt.legend()
+# c = plt.show()
+# print(c)
