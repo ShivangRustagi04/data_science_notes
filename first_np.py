@@ -192,3 +192,8 @@ import matplotlib.pyplot as plt
 # plt.hist([blood_sugar_men,blood_sugar_wohmen],bins=[90,190,290,390], rwidth=0.95)
 # a = plt.show()
 # print(a)
+#USING MATPLOTLIB WILL CREATE PIE CHART:
+exp_values = [400,500,600,900,100,200,200,1200]
+exp_names = ['rent','food', 'travel','mobile','electricity','tea','coffee','gym']
+plt.pie(exp_values,labels=exp_names)
+plt.show()
