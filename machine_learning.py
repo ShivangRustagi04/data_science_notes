@@ -34,6 +34,12 @@ from sklearn import linear_model
 
 #linear regression in multiple variables
 
-
+d = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\question.csv')
+print(d)
+import math
+median_bedrooms = math.floor(d.bedroom.median())
+print('median = ' ,median_bedrooms)
+d.bedroom = d.bedroom.fillna(median_bedrooms)
+print(d)
 
 
