@@ -195,5 +195,5 @@ import matplotlib.pyplot as plt
 #USING MATPLOTLIB WILL CREATE PIE CHART:
 exp_values = [400,500,600,900,100,200,200,1200]
 exp_names = ['rent','food', 'travel','mobile','electricity','tea','coffee','gym']
-plt.pie(exp_values,labels=exp_names)
+plt.pie(exp_values,labels=exp_names,autopct='%.2f%%',explode=[0.1,0.1,0,0,0,0,0.1,0.1], startangle=100)
 plt.show()
