@@ -41,5 +41,14 @@ median_bedrooms = math.floor(d.bedroom.median())
 print('median = ' ,median_bedrooms)
 d.bedroom = d.bedroom.fillna(median_bedrooms)
 print(d)
+reg = linear_model.LinearRegression()
+reg.fit(d[['area','bedroom','age']],d.price)
+a = reg.coef_
+print('coff=',a)
+b = reg.intercept_
+print('inter= ' ,b)
+c = reg.predict([[2500,4,5]])
+print('predict',c)
+# print(-166.5810369*3000 + 48101.86219361 * 3 + -940.7428467*40 +1015256.5846922402)
 
 
