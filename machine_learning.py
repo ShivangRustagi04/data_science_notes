@@ -19,12 +19,11 @@ print(b)                                        # tells c
 c = reg.coef_
 print(c)                                    # tells m
 print(83.78378378*2800 + 337297.2972972974 )
-d = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\question.csv')
+d = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\DS\\question.csv')
 print(d)
 e = reg.predict(d)                        # 21-27 homework question to predict price in following year
 print(e)
 d['prices'] = e
-print(d)
 d.to_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\sagar.csv',index=False)
 plt.xlabel('area')
 plt.ylabel('price')
@@ -57,3 +56,4 @@ print(digits.data[0])
 plt.gray()
 a = plt.matshow(digits.images[0])
 a = plt.matshow(digits.images[0])
+
