@@ -55,4 +55,8 @@ digits = load_digits()
 print (dir(digits))
 print(digits.data[0])
 plt.gray()
+<<<<<<< HEAD
 a = plt.matshow(digits.images[0])
+=======
+a = plt.matshow(digits.images[0])
+>>>>>>> 23a1778e53f854f6c71d6252a4e0fa335b201dc6
