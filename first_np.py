@@ -16,13 +16,13 @@ print(a.ravel())                 # BASICALLY BRING ALL ELEMENT IN [1 X M] FORMAT
 b = np.sqrt(a)
 print(b)
 b = np.array([[12,6,8,9],[2,9,3,6],[3,5,4,6],[3,4,7,0]])
-print(a*b)                   # BOTH ARRAY SHOULD HAVE SAME N X M 
-print(a.dot(b))
+# print(a*b)                   # BOTH ARRAY SHOULD HAVE SAME N X M 
+# print(a.dot(b))
 
 ''' pandas karenge ab '''
 
 import pandas as pd 
-df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\practice.csv')
+df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\DS\\practice.csv')
 print(df)
 a = df['Data'].max()
 print(a)
@@ -30,10 +30,7 @@ b = df['Series_reference'][df['STATUS']=='F']
 print(b)
 c = df['Period'].mean()
 print("mean =",c)
-df.fillna(0,inplace=75)
-d = df['Magnitude'].mean()
-print(d)
-df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\SHIVANG.csv')
+df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\DS\\SHIVANG.csv')
 print(df)
 SHIVANG = {
     'DATE' :  ['01-11-2011','02-11-2011','02-03-2011','05-03-2021','15-09-2015','31-12-2022'],
@@ -82,20 +79,6 @@ new_df = df.replace({'TEMPERATURE' : '[A-Za-z]'},'',regex=True)
 print(new_df)
 new_df = df.replace(['MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'],[0,1,2,3,4,5])               #   exchanging a column value... fully
 print(new_df)
-
-g = df.groupby('CITY')
-print(g)
-for CITY, CITY_df in g:
-    print(CITY)                                             # categorised whole data in group of same citty name.... and will print each city data separately
-    print(CITY_df)
-a = g.get_group('MUMBAI')                                      #sshows only data of mumbai
-print(a)
-a = g.max('')
-print(a)
-a = g.mean()
-print(a)
-a = g.describe()
-print(a)
 
 ind_weather = pd.DataFrame({
     'city' : ['delhi','mumbai','kashmir'],
