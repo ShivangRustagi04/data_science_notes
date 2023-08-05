@@ -1,10 +1,10 @@
-import pandas as pd
+# import pandas as pd
 # import numpy as np
 # import matplotlib.pyplot as plt
 # from sklearn import linear_model
 # import pickle
 # import joblib
-from sklearn.linear_model import LinearRegression 
+# from sklearn.linear_model import LinearRegression 
 # df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\DS\\SHIVANG.csv')
 # print(df)
 # plt.xlabel('area')
