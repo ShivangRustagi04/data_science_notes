@@ -37,6 +37,15 @@ class linkedlist:
             count += 1
             itr = itr.next
         return count
+    def insert_at(self, index, data):
+        if index < 0 or index > self.get_length():
+            raise Exception("invalid index")
+        if index == 0:
+            self.insert_at_beginning(data)
+            return
+        itr = self.head
+        while itr.next:
+            itr = itr.next
     def insert_at_end(self, data):
         if self.head is None:
             self.head = Node(data, None)

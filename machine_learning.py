@@ -1,12 +1,13 @@
 import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
-# from sklearn import linear_model
-# import pickle
-# import joblib
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import linear_model
+import pickle
+import joblib
 from sklearn.linear_model import LinearRegression 
-# df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\DS\\SHIVANG.csv')
-# print(df)
+df = pd.read_csv('C:\\Users\\shiva\\OneDrive\\Desktop\\DS\\SHIVANG.csv')
+print(df)
+
 # plt.xlabel('area')
 # plt.ylabel('price')
 # plt.scatter(df['area'],df['price'], color = 'red', marker='+')
@@ -87,21 +88,21 @@ from sklearn.linear_model import LinearRegression
 # mj = joblib.load('reg_joblib')
 # a = mj.predict([[5000]])
 # print(a)
-# pf = pd.read_csv("carprices.csv") 
-# print(pf)
-# i = pd.get_dummies(pf.Car_Model)
-# print(i) 
-# merged = pd.concat([pf,i],axis = 'columns')
-# print(merged)
-# final = merged.drop(['Car_Model','Mercedez Benz C class'], axis = 'columns')
-# print(final)
-# model = LinearRegression()
-# x = final.drop('Sell_Price',axis='columns')
-# print(x)
-# y = final['Sell_Price']
-# print(y)
-# model.fit(x,y)
-# p = model.predict([[86000,7,0,1]])
-# print(p)
-# ab = model.score(x,y)
-# print(ab)
+pf = pd.read_csv("carprices.csv") 
+print(pf)
+i = pd.get_dummies(pf.Car_Model)
+print(i) 
+merged = pd.concat([pf,i],axis = 'columns')
+print(merged)
+final = merged.drop(['Car_Model','Mercedez Benz C class'], axis = 'columns')
+print(final)
+model = LinearRegression()
+x = final.drop('Sell_Price',axis='columns')
+print(x)
+y = final['Sell_Price']
+print(y)
+model.fit(x,y)
+p = model.predict([[86000,7,0,1]])
+print(p)
+ab = model.score(x,y)
+print(ab)
