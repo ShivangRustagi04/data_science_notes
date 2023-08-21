@@ -12,51 +12,6 @@ nltk.download('punkt')
 nltk.download('wordnet')
 
 
-from deep_translator import GoogleTranslator
-
-def translate_and_store(input_file, output_file):
-    translator = GoogleTranslator(source='auto', target='en')
-    with open(input_file, 'r', encoding='utf-8') as f:
-        hindi_words = f.read().splitlines()
-
-    translated_words = []
-
-    for hindi_word in hindi_words:
-        translation = translator.translate(hindi_word)
-        translated_words.append(f"{hindi_word}: {translation}")
-
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(translated_words))
-
-import streamlit as st
-from deep_translator import GoogleTranslator
-
-def translate_hindi_to_english(hindi_word):
-    translator = GoogleTranslator(source='auto', target='en')
-    translation = translator.translate(hindi_word)
-    return translation
-
-def main():
-    st.title("Hindi to English Translator")
-
-    hindi_word = st.text_input("Enter a Hindi word written in English:")
-    translated_word = translate_hindi_to_english(hindi_word)
-
-    if hindi_word:
-        st.markdown(f"**Translation:** {translated_word}")
-
-if __name__ == "__main__":
-    main()
-
-
-if __name__ == "__main__":
-    input_filename = "input_hindi_words.txt"
-    output_filename = "read.txt"
-    translate_and_store(input_filename, output_filename)
-    print(f"Translations saved to {output_filename}")
-
-
-
 text = open('read.txt', encoding='utf-8').read()
 lower_case = text.lower()
 cleaned_text = lower_case.translate(str.maketrans('', '', string.punctuation))
