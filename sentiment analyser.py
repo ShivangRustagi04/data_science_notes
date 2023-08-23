@@ -13,6 +13,29 @@ nltk.download('wordnet')
 
 
 from deep_translator import GoogleTranslator
+import pandas as pd
+
+def copy_person_messages_to_text(csv_file, specific_person, output_text_file):
+    # Read the CSV file
+    df = pd.read_csv(csv_file)
+
+    # Filter data for the specific person
+    filtered_data = df[df['user'] == specific_person]['message']
+
+    # Write filtered data to the specified text file
+    with open(output_text_file, 'w', encoding='utf-8') as f:
+        for message in filtered_data:
+            f.write(message + '\n')
+
+    print(f"Messages from '{specific_person}' copied to '{output_text_file}'.")
+
+# Specify the CSV file and specific person
+csv_file = 'sample_whatsapp_messages.csv'
+specific_person = input("Whose messages do you want to copy? ")
+output_text_file = 'read.txt'  # Change this to your desired output text file
+
+# Call the function
+copy_person_messages_to_text(csv_file, specific_person, output_text_file)
 
 def translate_and_store(input_file, output_file):
     translator = GoogleTranslator(source='auto', target='en')
@@ -48,12 +71,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-if __name__ == "__main__":
-    input_filename = "input_hindi_words.txt"
-    output_filename = "read.txt"
-    translate_and_store(input_filename, output_filename)
-    print(f"Translations saved to {output_filename}")
 
 
 
@@ -100,10 +117,11 @@ def sentiment_analyze(sentiment_text):  # Renamed from sentiment_analyse to sent
         print("Neutral Sentiment")
 
 
-sentiment_analyze(cleaned_text)  # Changed function name
+sentiment_analyze(cleaned_text)
 
 fig, ax1 = plt.subplots()
 ax1.bar(w.keys(), w.values())
 fig.autofmt_xdate()
 plt.savefig('graph.png')
 plt.show()
+
