@@ -515,3 +515,108 @@
  'unhappy': 'sad',
  'vindicated': 'singled out',
  'worked up': 'angry'
+ 'khush': 'Positive',
+ 'udas': 'Negative',
+ 'gussa': 'Negative',
+    'chintit': 'Negative',
+    'masti': 'Positive',
+    'dosti': 'Positive',
+    'pyaar': 'Positive',
+    'bura': 'Negative',
+    'accha': 'Positive',
+    'achhi': 'Positive',
+    'kharab': 'Negative',
+    'mazaa': 'Positive',
+    'takleef': 'Negative',
+    'mehnat': 'Positive',
+    'sukoon': 'Positive',
+    'thak gaya': 'Negative',
+    'khooshi': 'Positive',
+    'kya bakwaas hai': 'Negative',
+    'badiya': 'Positive',
+    'hasi aayi': 'Positive',
+    'ansoon': 'Negative',
+    'khatti': 'Negative',
+    'sar dard': 'Negative',
+    'raazi': 'Positive',
+    'khushi ka mauka': 'Positive',
+    'rulaya': 'Negative',
+    'khush': 'Positive',
+    'udas': 'Negative',
+    'gussa': 'Negative',
+    'chintit': 'Negative',
+    'masti': 'Positive',
+    'dosti': 'Positive',
+    'pyaar': 'Positive',
+    'bura': 'Negative',
+    'accha': 'Positive',
+    'achhi': 'Positive',
+    'kharab': 'Negative',
+    'mazaa': 'Positive',
+    'takleef': 'Negative',
+    'mehnat': 'Positive',
+    'sukoon': 'Positive',
+    'thak gaya': 'Negative',
+    'khooshi': 'Positive',
+    'kya bakwaas hai': 'Negative',
+    'badiya': 'Positive',
+    'prayer':'happy'
+'blessing': 'blessed'
+'sacrifice': 'sad'
+'faith': 'trust'
+'divine': 'cheered'
+'enlightenment': 'surprised'
+'resurrection': 'hopeful'
+'salvation': 'blessed'
+'meditation': 'calm'
+'unity': 'cheerful'
+'redemption': 'happy'
+'grace': 'humble'
+'compassion': 'happy'
+'pilgrimage': 'attracted'
+'miracle': 'happy'
+'heritage': 'proud'
+'diversity': 'happy'
+'tradition': 'cheerful'
+'folklore': 'surprise'
+'celebration': 'happy'
+'unity': 'happy'
+'cuisine': 'cheerful'
+'music': 'happy'
+'clothing': 'pride'
+'artistry': 'creative'
+'history': 'surprise'
+'community': 'happy'
+'diversity': 'surprise'
+'inclusion':'happy'
+'discrimination': 'angry'
+'equality':'fair'
+'identity': 'proud'
+'segregation': 'lonely'
+'empowerment': 'strong'
+'justice': 'happy'
+'prejudice': 'hurt'
+'harmony': 'happy'
+'exclusion': 'lonely'
+'understanding': 'angry'
+'struggle': 'sad'
+'privilege': 'sad'
+'equity': 'cheer'
+'black people' : 'Negative'
+'white people' : 'Negative'
+'bald people' : 'Negative'
+'motherfucker' : 'Negative'
+'transgender' : 'Negative'
+'ladkiyan ghar mai rehni chahiye' : 'Negative'
+'ladkiyon ka kaam khana banana h' : 'Negative'
+'bajrang dal' : 'Positive'
+'Monu Manesar' : 'Negative'
+'weapons' : 'Negative'
+'lay out a plan to attack the yatra' : 'Negative'
+'pelting' : 'sad'
+'curfew' : 'lonely'
+'modi hi aayega' : 'Positive'
+
+
+
+
