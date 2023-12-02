@@ -1,3 +1,5 @@
+# i created another text file which contains most common hindi and english words that are used in conversation and through which i can detect sentiment of message as negative or positive 
+
 import string
 from collections import Counter
 import matplotlib.pyplot as plt
