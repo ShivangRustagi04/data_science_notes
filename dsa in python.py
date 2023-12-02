@@ -57,6 +57,20 @@ class linkedlist:
 
         itr.next = Node(data)
 
+    def insert_at(self, index, data):
+        if index < 0 or index > self.get_length():
+            raise Exception("invalid index")
+        
+        if index == 0:
+            self.insert_at_beginning(data)
+
+
+        itr = self.head
+        count = 0 
+        while itr:
+            itr = itr.next
+        
+
 
 
 if __name__ == '__main__':
@@ -65,6 +79,7 @@ if __name__ == '__main__':
     root.insert_at_beginning(10)
     root.insert_at_beginning(15)
     root.insert_at_end(234) 
+    root.insert_at(-1,6934) 
     root.print()
 # 22:06 se dekhna h
         
