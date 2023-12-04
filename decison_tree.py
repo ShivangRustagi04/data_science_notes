@@ -27,3 +27,23 @@ train_accuracy = model.score(X_train, y_train)
 print("Training Accuracy:", train_accuracy)
 test_accuracy = model.score(X_test, y_test)
 print("Testing Accuracy:", test_accuracy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
