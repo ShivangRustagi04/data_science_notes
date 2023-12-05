@@ -57,7 +57,7 @@ model.fit(X_train, y_train)
 
 # Evaluate the model
 accuracy = model.score(X_test, y_test)
-print(f'Model Accuracy: {accuracy * 100:.2f}%')
+print(f'Model Accuracy: ' , accuracy)
 
 
 
